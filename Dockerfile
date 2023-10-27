@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3
+FROM continuumio/anaconda3:2023.03-1
 WORKDIR /root
 RUN apt-get update && apt-get install -y curl file
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
